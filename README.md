@@ -2,7 +2,7 @@
 
 Simle package for parsing and comparing version strings
 
-```
+```go
 package main
 
 import (
