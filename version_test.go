@@ -39,7 +39,7 @@ func TestVersion(t *testing.T) {
 		var err error
 		v = version.Parse(d.ParseString)
 		if d.ExpectError {
-			if v.String(true) != "0.0.0" {
+			if v.String() != "0.0.0" {
 				t.Error("Error expected but not found " + d.ParseString)
 			}
 			continue
@@ -49,8 +49,8 @@ func TestVersion(t *testing.T) {
 			continue
 		}
 
-		if v.String(true) != d.VersionString {
-			t.Error("Versions don't match", v.String(true), d.VersionString)
+		if v.String() != d.VersionString {
+			t.Error("Versions don't match", v.String(), d.VersionString)
 		}
 	}
 }

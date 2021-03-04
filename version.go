@@ -64,11 +64,13 @@ func Parse(s string) Version {
 	return v
 }
 
-// String returns version string w/ or w/o patch part
-func (v Version) String(withPatch bool) string {
-	if withPatch {
-		return fmt.Sprintf("%d.%d.%d", v.Major, v.Minor, v.Patch)
-	}
+// String returns full version string with 3 components
+func (v Version) String() string {
+	return fmt.Sprintf("%d.%d.%d", v.Major, v.Minor, v.Patch)
+}
+
+// ShortString returns full version string with 2 components
+func (v Version) ShortString() string {
 	return fmt.Sprintf("%d.%d", v.Major, v.Minor)
 }
 

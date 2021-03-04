@@ -20,6 +20,10 @@ func main() {
 	fmt.Println("Minor release:", v.Minor)
 	fmt.Println("Patch:", v.Patch)
 
+	fmt.Println(v.String())  // 5.2.10
+	fmt.Println(v.ShortString())  // 5.2
+
+
 	// compare to second version
 	v2 := version.Parse("5.2.1")
 	if v.EqualOrHigherThan(v2) {
