@@ -1,6 +1,14 @@
 # Version
 
-Simle package for parsing and comparing version strings
+Simle package for parsing and comparing version strings.
+
+I have created this package for my own needs, but later on I have found out for https://github.com/hashicorp/go-version which is probably more robust and versatile package.
+
+## Instalation
+
+```go get github.com/mileusna/version```
+
+## Example 
 
 ```go
 package main
