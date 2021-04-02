@@ -6,7 +6,9 @@ I have created this package for my own needs, but later on I have found out for 
 
 ## Instalation
 
-```go get github.com/mileusna/version```
+```
+go get github.com/mileusna/version
+```
 
 ## Example 
 
